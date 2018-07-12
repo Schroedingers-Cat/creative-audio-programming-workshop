@@ -9,6 +9,7 @@
 
 var osc;
 var playing = false;
+var env;
 
 
 function setup() {
@@ -20,6 +21,10 @@ function setup() {
   osc.freq(240);
   osc.amp(0);
   osc.start();
+
+  env = new p5.Env();
+  env.setADSR(0.5, 2, 0.5, 2);
+
 }
 
 function draw() {
@@ -31,12 +36,15 @@ function mouseClicked() {
   if (mouseX > 0 && mouseX < width && mouseY < height && mouseY > 0) {
     if (!playing) {
       // ramp amplitude to 0.5 over 0.05 seconds
-      osc.amp(0.5, 0.05);
+
+      osc.amp(env);
+      env.play();
       playing = true;
       backgroundColor = color(0,255,255);
     } else {
       // ramp amplitude to 0 over 0.5 seconds
-      osc.amp(0, 0.5);
+      osc.amp(env);
+      env.play();
       playing = false;
       backgroundColor = color(255,0,255);
     }

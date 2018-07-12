@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a922a6c5-d081-4b82-9939-dd5839ac84d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/sounds/Braaaam.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/br0kenviolin-001.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/br0kenviolin-002.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/br0kenviolin-003.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/br0kenviolin.RPP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/br0kenviolin.RPP-bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/br0kenviolin.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/br0kenviolin.ogg.reapeaks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/burp.RPP" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/burp.RPP-bak" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/burp.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/burp.ogg.reapeaks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/burp.wav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/synth-snare.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/synth-swoosh.ogg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sounds/synth-transformers.ogg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch_init.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/topic2-synthesis/00_oscillator/sketch_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/topic2-synthesis/00_oscillator/sketch_init.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -33,31 +18,19 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/index.html">
+        <entry file="file://$PROJECT_DIR$/topic2-synthesis/00_oscillator/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="87" lean-forward="true" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+            <state relative-caret-position="165">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="sketch_init.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch_init.js">
+        <entry file="file://$PROJECT_DIR$/topic2-synthesis/00_oscillator/sketch_init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sketch_init.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/topic1-sampling/01_loadSound_playstop_keyboard/sketch_init.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="48" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="48" />
+            <state relative-caret-position="349">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -66,9 +39,9 @@
         </entry>
       </file>
       <file leaf-file-name="sketch.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch.js">
+        <entry file="file://$PROJECT_DIR$/topic2-synthesis/00_oscillator/sketch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
+            <state relative-caret-position="-8">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -94,6 +67,7 @@
         <option value="$PROJECT_DIR$/topic1-sampling/03_loadSound_play_four_sounds/sketch_init.js" />
         <option value="$PROJECT_DIR$/topic1-sampling/04_recordingSound/sketch_init.js" />
         <option value="$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch_init.js" />
+        <option value="$PROJECT_DIR$/topic2-synthesis/00_oscillator/sketch_init.js" />
       </list>
     </option>
   </component>
@@ -126,29 +100,13 @@
             <path>
               <item name="creative-audio-programming-workshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="creative-audio-programming-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+              <item name="topic2-synthesis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="creative-audio-programming-workshop" type="b2602c69:ProjectViewProjectNode" />
               <item name="creative-audio-programming-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="sounds" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="creative-audio-programming-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="creative-audio-programming-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="topic1-sampling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="creative-audio-programming-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="creative-audio-programming-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="topic1-sampling" type="462c0819:PsiDirectoryNode" />
-              <item name="01_loadSound_playstop_keyboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="creative-audio-programming-workshop" type="b2602c69:ProjectViewProjectNode" />
-              <item name="creative-audio-programming-workshop" type="462c0819:PsiDirectoryNode" />
-              <item name="topic1-sampling" type="462c0819:PsiDirectoryNode" />
-              <item name="05_sampler&amp;recorder" type="462c0819:PsiDirectoryNode" />
+              <item name="topic2-synthesis" type="462c0819:PsiDirectoryNode" />
+              <item name="00_oscillator" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -160,7 +118,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -192,16 +150,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531382050322</updated>
-      <workItem from="1531382053142" duration="10188000" />
+      <workItem from="1531382053142" duration="11981000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10188000" />
+    <option name="totallyTimeSpent" value="11981000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="873" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21875" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -388,9 +345,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch.js">
+    <entry file="file://$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch_init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
+        <state relative-caret-position="409">
+          <caret line="80" column="23" lean-forward="true" selection-start-line="80" selection-start-column="23" selection-end-line="80" selection-end-column="23" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -414,10 +372,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch_init.js">
+    <entry file="file://$PROJECT_DIR$/topic1-sampling/05_sampler&amp;recorder/sketch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
+        <state relative-caret-position="-135">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic2-synthesis/00_oscillator/sketch.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic2-synthesis/00_oscillator/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic2-synthesis/00_oscillator/sketch_init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
