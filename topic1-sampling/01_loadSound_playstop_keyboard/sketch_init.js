@@ -5,11 +5,10 @@
 // Basic control of playing a sound with keyboard keys, preload method with successCallback function
 
 var sound;
-var isLooping;
 
 function preload(){
   // load sound here
-  sound = loadSound("sounds/Prassel_noise_loop_4s.ogg", loaded);
+  sound = loadSound("../../sounds/explosion.ogg", loaded);
 }
 
 function setup(){
@@ -29,30 +28,29 @@ function loaded() {
 function keyPressed() {
   if (keyCode === UP_ARROW) {
     console.log("UP_ARROW: play");
-    // set play sound
+    sound.play();
   } else if (keyCode === DOWN_ARROW) {
     console.log("DOWN_ARROW: stop");
-    // set stop sound
+    sound.stop();
   } else if (keyCode === LEFT_ARROW) {
     console.log("LEFT_ARROW: reversed");
-    // if the sound is in stop mode, it does not play reverse, how to avoid it?
-    // set it to play if it is not playing!
-    // set sound to reversed
+    sound.rate(-1);
+    if (sound.isPlaying() === false) {
+      console.log("Sound is not playing. Will start playing now.");
+      sound.play();
+    }
   } else if (keyCode === RIGHT_ARROW) {
     console.log("RIGHT_ARROW: pause");
-    // set pause sound
+    sound.pause();
   } else if (keyCode === 76) {
     console.log("L");
-    if (isLooping == 0)
-    {
+    if (sound.isLooping() === false) {
       console.log("looping");
-      // set sound to loop
-      // set isLooping to false
+      sound.setLoop(true)
     }
-    else if (isLooping == 1) {
+    else if (sound.isLooping() === true) {
       console.log("no looping");
-      // set sound to no loop
-      // set boolean isLooping to true
+      sound.setLoop(false);
     }
   }
 }
