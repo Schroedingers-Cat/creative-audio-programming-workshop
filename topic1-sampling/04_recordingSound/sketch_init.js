@@ -10,55 +10,61 @@ var mic, recorder, soundFile;
 var state = 0;
 
 function setup() {
-  background(200);
-  // create an audio in
-  mic = new p5.AudioIn();
+    background(200);
+    // create an audio in
+    mic = new p5.AudioIn();
 
-  // prompts user to enable their browser mic
-  mic.start();
+    // prompts user to enable their browser mic
+    mic.start();
 
-  // create a sound recorder
-  recorder = new p5.SoundRecorder();
+    // create a sound recorder
+    recorder = new p5.SoundRecorder();
 
-  // connect the mic to the recorder
-  recorder.setInput(mic);
+    // connect the mic to the recorder
+    recorder.setInput(mic);
 
-  // this sound file will be used to
-  // playback & save the recording
-  soundFile = new p5.SoundFile();
+    // this sound file will be used to
+    // playback & save the recording
+    soundFile = new p5.SoundFile();
 
-  text('keyPress to record', 20, 20);
+    text('keyPress to record', 20, 20);
 }
 
 function keyPressed() {
 
 
-  if (state === 0 && mic.enabled) {
+    if (keyCode === 82){
+        console.log("r");
+        state = 0; // play the result!
+    }
 
-    // record to our p5.SoundFile
-    recorder.record(soundFile);
+    // make sure user enabled the mic
+    else if (state === 0 && mic.enabled) {
 
-    background(255,0,0);
-    text('Recording!', 20, 20);
-    state++;
-  }
-  else if (state === 1) {
-    background(0,255,0);
+        // record to our p5.SoundFile
+        recorder.record(soundFile);
 
-    // stop recorder and
-    // send result to soundFile
-    recorder.stop();
+        background(255,0,0);
+        text('Recording!', 20, 20);
+        state++;
+    }
+    else if (state === 1) {
+        background(0,255,0);
 
-    text('Stopped', 20, 20);
-    state++;
-  }
+        // stop recorder and
+        // send result to soundFile
+        recorder.stop();
 
-  else if (state > 1) {
-    soundFile.play(); // play the result!
-    console.log("saving file...");
-    //save(soundFile, 'mySound.wav');
-    state++;
-  }
+        text('Stopped', 20, 20);
+        state++;
+    }
+
+    else if (state > 1) {
+        soundFile.play(); // play the result!
+        console.log("saving file...");
+        //save(soundFile, 'mySound.wav');
+        state++;
+    }
 
 
 }
