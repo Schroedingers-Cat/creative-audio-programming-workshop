@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a922a6c5-d081-4b82-9939-dd5839ac84d9" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/creative-audio-programming-workshop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/p5.dom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/p5.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libraries/p5.sound.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offtopic/00_debuggingtest/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/offtopic/00_debuggingtest/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/offtopic/00_debuggingtest/sketch.js" beforeDir="false" afterPath="$PROJECT_DIR$/offtopic/00_debuggingtest/sketch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/topic1-sampling/00_loadSound/sketch_init.js" beforeDir="false" afterPath="$PROJECT_DIR$/topic1-sampling/00_loadSound/sketch_init.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,8 +19,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic1-sampling/00_loadSound/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -38,7 +28,8 @@
       <file leaf-file-name="sketch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/topic1-sampling/00_loadSound/sketch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="150">
+              <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -49,8 +40,8 @@
       <file leaf-file-name="sketch_init.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/topic1-sampling/00_loadSound/sketch_init.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+            <state relative-caret-position="150">
+              <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -68,6 +59,7 @@
       <list>
         <option value="$PROJECT_DIR$/offtopic/00_debuggingtest/index.html" />
         <option value="$PROJECT_DIR$/offtopic/00_debuggingtest/sketch.js" />
+        <option value="$PROJECT_DIR$/topic1-sampling/00_loadSound/sketch.js" />
         <option value="$PROJECT_DIR$/topic1-sampling/00_loadSound/sketch_init.js" />
       </list>
     </option>
@@ -130,6 +122,13 @@
               <item name="creative-audio-programming-workshop" type="462c0819:PsiDirectoryNode" />
               <item name="topic1-sampling" type="462c0819:PsiDirectoryNode" />
               <item name="00_loadSound" type="462c0819:PsiDirectoryNode" />
+              <item name="libraries" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="creative-audio-programming-workshop" type="b2602c69:ProjectViewProjectNode" />
+              <item name="creative-audio-programming-workshop" type="462c0819:PsiDirectoryNode" />
+              <item name="topic1-sampling" type="462c0819:PsiDirectoryNode" />
+              <item name="00_loadSound" type="462c0819:PsiDirectoryNode" />
               <item name="sounds" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -173,12 +172,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1531382050322</updated>
-      <workItem from="1531382053142" duration="1997000" />
+      <workItem from="1531382053142" duration="2507000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1997000" />
+    <option name="totallyTimeSpent" value="2507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1600" height="873" extended-state="6" />
@@ -240,26 +239,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/topic1-sampling/00_loadSound/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/topic1-sampling/00_loadSound/sketch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="150">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic1-sampling/00_loadSound/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="63" selection-start-line="4" selection-start-column="63" selection-end-line="4" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/topic1-sampling/00_loadSound/sketch_init.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        <state relative-caret-position="150">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
