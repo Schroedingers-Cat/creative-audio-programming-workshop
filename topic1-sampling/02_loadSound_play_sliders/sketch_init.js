@@ -10,12 +10,13 @@
   var sliderRate;
   var sliderPan;
   var button;
+  var randPlayhead;
 
   function setup(){
     createCanvas(400, 200);
     sound = loadSound("sounds/Prassel_noise_loop_4s.ogg", loaded);
     sliderVolume = createSlider(0, 1, 0.5, 0.1);
-    sliderRate = createSlider(0, 1, 0.5, 0.01);
+    sliderRate = createSlider(0, 10, 0.5, 0.01);
     sliderPan = createSlider(-1, 1, 0, 0.01);
     sliderVolume.position(20, 20);
     sliderRate.position(20, 50);
@@ -34,15 +35,16 @@
   function draw(){
     background(255);
     sound.setVolume(sliderVolume.value());
-    // set rate to slider rate value
-    // set pan to slider pan value
-    text("vol: ", sliderVolume.x * 2 + sliderVolume.width, 35);
-    text("rate: ", sliderRate.x * 2 + sliderRate.width, 65);
-    text("pan: ", sliderPan.x * 2 + sliderPan.width, 95);
+    sound.rate(sliderRate.value());
+    sound.pan(sliderPan.value());
+    text("vol: " + sliderVolume.value(), sliderVolume.x * 2 + sliderVolume.width, 35);
+    text("rate: " + sliderRate.value(), sliderRate.x * 2 + sliderRate.width, 65);
+    text("pan: " + sliderPan.value(), sliderPan.x * 2 + sliderPan.width, 95);
   }
 
-  function randomize(){
-    //set randPlayhead to random value from 1 to soundDur
-    // set sound to jump according to randPlayhead
+  function randomize() {
+    randPlayhead = Math.random() * soundDur;
+    console.log(soundDur);
     console.log("jumping to..." + randPlayhead);
+    sound.jump(randPlayhead);
   }
