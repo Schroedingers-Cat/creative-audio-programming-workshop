@@ -9,7 +9,11 @@ var isLooping;
 
 function preload(){
   // load sound here
-  sound = loadSound("sounds/Prassel_noise_loop_4s.ogg", loaded);
+    sound1 = loadSound("../../sounds/hihat.ogg", loaded);
+    sound2 = loadSound("../../sounds/snare.ogg", loaded);
+    sound3 = loadSound("../../sounds/cymbal.ogg", loaded);
+    sound4 = loadSound("../../sounds/monkey.ogg", loaded);
+
 }
 
 function setup(){
@@ -22,37 +26,30 @@ function draw(){
 
 function loaded() {
   console.log("loaded");
-  // set playmode to restart
+  sound1.playMode('sustain');
+  sound2.playMode('sustain');
+  sound3.playMode('restart');
+  sound4.playMode('restart');
+
   // set Boolean isLooping to false
 }
 
 function keyPressed() {
-  if (keyCode === UP_ARROW) {
-    console.log("UP_ARROW: play");
-    // set play sound
-  } else if (keyCode === DOWN_ARROW) {
-    console.log("DOWN_ARROW: stop");
-    // set stop sound
-  } else if (keyCode === LEFT_ARROW) {
-    console.log("LEFT_ARROW: reversed");
-    // if the sound is in stop mode, it does not play reverse, how to avoid it?
-    // set it to play if it is not playing!
-    // set sound to reversed
-  } else if (keyCode === RIGHT_ARROW) {
-    console.log("RIGHT_ARROW: pause");
-    // set pause sound
-  } else if (keyCode === 76) {
-    console.log("L");
-    if (isLooping == 0)
-    {
-      console.log("looping");
-      // set sound to loop
-      // set isLooping to false
+    if (keyCode == 65) {
+        console.log("a");
+        sound1.play();
+        bgvalue = random(1, 255);
+    } else if (keyCode == 87) {
+        console.log("w");
+        sound2.play();
+        bgvalue = random(1, 255);
+    } else if (keyCode == 68) {
+        console.log("d");
+        sound3.play();
+        bgvalue = random(1, 255);
+    } else if (keyCode == 88) {
+        console.log("x");
+        sound4.play();
+        bgvalue = random(1, 255);
     }
-    else if (isLooping == 1) {
-      console.log("no looping");
-      // set sound to no loop
-      // set boolean isLooping to true
-    }
-  }
 }
