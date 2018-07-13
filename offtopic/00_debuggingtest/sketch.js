@@ -4,6 +4,8 @@
 var playing;
 
 function setup() {
+	console.log("hello");
+	playing = false;
   // put setup code here
     console.log("hello you nice people on the world <3");
     playing = false;
