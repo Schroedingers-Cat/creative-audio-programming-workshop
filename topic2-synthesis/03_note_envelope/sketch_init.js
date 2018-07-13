@@ -6,22 +6,24 @@
 
 var osc, envelope;
 
-var scaleArray = [60, 62, 64, 65, 67, 69, 71, 72]; // Try different scales, or not playing all the notes
+var scaleArray = [60, 40, 64, 58, 69, 56, 71, 52]; // Try different scales, or not playing all the notes
 
 var note = 0;
 
+var mode = 8;
+
 function setup() {
   createCanvas(710, 200);
-  osc = new p5.SinOsc();
+  osc = new p5.TriOsc();
 
   // Instantiate the envelope
   envelope = new p5.Env();
 
   // set attackTime, decayTime, sustainRatio, releaseTime
-  envelope.setADSR(0.001, 0.5, 0.1, 0.5);
+  envelope.setADSR(1, 0.2, 0.1, 1);
 
   // set attackLevel, releaseLevel
-  envelope.setRange(1, 0);
+  envelope.setRange(0, 1);
 
   osc.start();
 
@@ -31,16 +33,25 @@ function setup() {
 function draw() {
   background(20);
   //console.log("frameCount: " +frameCount);
-  if (frameCount % 60 == 0 || frameCount == 1) { // How can we make it faster?
+  if (frameCount % mode == 0 || frameCount == 1) { // How can we make it faster?
     var midiValue = scaleArray[note];
-    // print midiValue
+    console.log("midiValue: " +midiValue);
     var freqValue = midiToFreq(midiValue);
-    // print freqValue   
+    console.log("freqValue: " +freqValue);
     osc.freq(freqValue);
 
     envelope.play(osc, 0, 0.1); // params: unit, starttime, sustaintime	
     note = (note + 1) % scaleArray.length;
-    // print note value
+    console.log("note: " + note)
+    if (midiValue == 52) {
+      if (mode == 8) {
+        mode = 20;
+        envelope.setADSR(1, 0.2, 0.1, 1);
+      } else {
+        mode = 8;
+        envelope.setADSR(0.1, 0.2, 0.1, 0.4);
+      }
+    }
   }
 
 }
