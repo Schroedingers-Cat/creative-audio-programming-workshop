@@ -7,6 +7,8 @@
 var carrier; // this is the oscillator we will hear
 var modulator; // this oscillator will modulate the amplitude of the carrier
 var fft; // we'll visualize the waveform
+var modulatorBaseFreq = 100;
+var lfo;
 
 function setup() {
   createCanvas(800,400);
@@ -16,15 +18,21 @@ function setup() {
 
   carrier = new p5.Oscillator(); // connects to master output by default
   carrier.freq(1000);
-  //carrier.amp(0.5);
+  carrier.amp(0.4);
 
   carrier.start();
 
-  modulator = new p5.Oscillator('sine'); // you can change to square [], sine ~ or triangle /\
+  modulator = new p5.Oscillator('saw'); // you can change to square [], sine ~ or triangle /\
   modulator.disconnect();  // disconnect the modulator from master output
-  modulator.freq(400);
-  modulator.amp(0.5);
+  modulator.freq(modulatorBaseFreq);
+  modulator.amp(0.4);
   modulator.start();
+
+  lfo = new p5.Oscillator('sine');
+  lfo.disconnect();
+  lfo.freq(10);
+  lfo.amp(1);
+  lfo.start();
 
   // Modulate the carrier's amplitude with the modulator
   // Optionally, we can scale the signal.
@@ -39,7 +47,7 @@ function draw() {
   background(200);
   // map mouseX to moodulator freq between 0 and 20hz
   //var modFreq = map(mouseX, 0, width, 2, 20000);
-  var modFreq = 400;
+  var modFreq = modulatorBaseFreq; // + modulator
   modulator.freq(modFreq);
 
   // map mouseY to carrier freq between 300 and 2000
