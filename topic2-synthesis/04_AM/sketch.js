@@ -47,7 +47,8 @@ function draw() {
   background(200);
   // map mouseX to moodulator freq between 0 and 20hz
   //var modFreq = map(mouseX, 0, width, 2, 20000);
-  var modFreq = modulatorBaseFreq; // + modulator
+  var modFreq = Number(modulatorBaseFreq + lfo.scale(-1,1,0,1)); // + modulator
+  console.log(modFreq);
   modulator.freq(modFreq);
 
   // map mouseY to carrier freq between 300 and 2000

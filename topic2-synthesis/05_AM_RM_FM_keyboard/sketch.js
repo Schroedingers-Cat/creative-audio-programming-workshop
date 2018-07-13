@@ -60,6 +60,7 @@ function makeFMSynth(){
 function draw() {
    background(100);
    modFreq = 1000 * (mouseX / width); // from 0 to 1000 Hz
+
    if(note)text(
     "key:" + key + "\n"+
     "car freq: "+ parseInt(midiToFreq(note)) +"hz \n" +
@@ -72,6 +73,7 @@ function draw() {
 
 function keyPressed() {
     note = keys[key];
+  //modFreq = Math.random() * 10000;
     if(note){
         carrier.freq(midiToFreq(note))
         env.triggerAttack();
